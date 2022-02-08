@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
 })
 // 命名規則 pascalcase
 export class AppComponent {
-  title = 'angularDemo';
+  title = 'Steve Ou First Angular Demo';
+  keyword = '123';
 }

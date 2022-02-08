@@ -5,7 +5,28 @@ import { Component } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent  {
 
-  constructor() { }
+
+export class HeaderComponent {
+
+  sitename = 'Hello world';
+  sitelogo = '/assets/images/logo.png';
+
+  constructor() {
+
+  }
+
+  // 用強型別
+  changeTitle($event: MouseEvent) {
+    console.log('022');
+    if ($event.ctrlKey) {
+      this.sitename = 'xxxx';
+    }
+  }
+
+  // changeTitle($event: PointerEvent) {
+  //   console.log($event);
+
+
+  // }
 }
