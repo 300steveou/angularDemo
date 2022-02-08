@@ -1,4 +1,6 @@
-<p>header works! {{sitename}}</p>
+<p [class.highlight]="counter%2===1">header works! {{sitename}}</p>
+<h3 [style.font-size.px]="(counter+12)">字體大小目前為: {{counter+12}}PX</h3>
+<h4 *ngIf="counter%2===0">DOM 移除或重建</h4>
 <div>
-  <img src="/assets/images/logo.png" [attr.data-id]="123" (click)="changeTitle($event)"/>
+  <img src="/assets/images/logo.png" [attr.data-id]="123" (click)="changeTitle($event)" />
 </div>

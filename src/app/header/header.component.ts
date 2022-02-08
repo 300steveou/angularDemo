@@ -11,6 +11,7 @@ export class HeaderComponent {
 
   sitename = 'Hello world';
   sitelogo = '/assets/images/logo.png';
+  counter =0;
 
   constructor() {
 
@@ -19,6 +20,7 @@ export class HeaderComponent {
   // 用強型別
   changeTitle($event: MouseEvent) {
     console.log('022');
+    this.counter++;
     if ($event.ctrlKey) {
       this.sitename = 'xxxx';
     }

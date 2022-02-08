@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   // 宣稱註冊
@@ -22,6 +23,7 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   // 依序啟動
