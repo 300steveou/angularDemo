@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ArticleComponent } from './article/article.component';
 
 @NgModule({
   // 宣稱註冊
@@ -16,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     HeaderComponent,
     FooterComponent,
+    ArticleComponent,
   ],
   // 註冊 module就是封裝component
   // 宣告要匯入此模組的外部模組

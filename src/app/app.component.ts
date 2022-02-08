@@ -22,6 +22,7 @@ export class AppComponent {
   constructor(private http: HttpClient) {
     http.get<any[]>('/api/article.json').subscribe({
       next: (data) => {this.data = data;}
+
     })
   }
 
